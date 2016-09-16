@@ -6,7 +6,7 @@ import java.util.Stack;
 
 public class UsingStack {
 
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		Stack sta = new Stack();
 		
 		sta.push(12);
@@ -14,12 +14,12 @@ public class UsingStack {
 		sta.push(12.6);
 		//stack에 순차적으로 입력
 		
-		Iterator iterator1 = sta.iterator();
-		while (iterator1.hasNext()) {
-		    System.out.print(iterator1.next()+" ");
+		Iterator iterator = sta.iterator();
+		while (iterator.hasNext()) {
+		    System.out.print(iterator.next()+" ");
 		}
 		System.out.println();
-		//stack에 내용 출력
+		//stack의 내용 출력
 		
 		System.out.println(sta.size());
 		// stack 사이즈
@@ -27,13 +27,12 @@ public class UsingStack {
         System.out.println(sta.peek());
         // 데이터를 빼지 않고 현재 가장 위에 위치하는 데이터 확인
 		
-		Iterator iterator2 = sta.iterator();
-		while (iterator2.hasNext()) {
+		while (!sta.empty()) {
 		    System.out.print(sta.pop()+" ");
 		}
 		System.out.println();
 		//stack의 내용 순차적으로 내보냄
 		
-	}
+	}*/
 
 }
