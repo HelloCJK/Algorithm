@@ -16,41 +16,41 @@ public class UsingList {
 //		List listB = new LinkedList();
 //		List listC = new Vector();
 //		List listD = new Stack();
-		listA.add("andy");
+		listA.add("andy"); //
 		listA.add("jully");
 		listA.add(new String("candy"));
 		 
 		listA.add(1, "apple");
-		//1¿¡ "apple" Ãß°¡
+		//1ï¿½ï¿½ "apple" ï¿½ß°ï¿½
 		
 		int index = listA.indexOf("candy");
-		//candyÀ§Ä¡°ª
+		//candyï¿½ï¿½Ä¡ï¿½ï¿½
         listA.add(index, "luffy");
-        //candy¾Õ¿¡ ¿ä¼Ò Ãß°¡
+        //candyï¿½Õ¿ï¿½ ï¿½ï¿½ï¿½ ï¿½ß°ï¿½
 		
-		// ÀÎµ¦½º¸¦ ÅëÇÑ Á¶È¸    //ÇÏ³ª¾¿ Á¶È¸ÇÒ¶§ »ç¿ë
+		// ï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¸    //ï¿½Ï³ï¿½ï¿½ï¿½ ï¿½ï¿½È¸ï¿½Ò¶ï¿½ ï¿½ï¿½ï¿½
 		String element0 = listA.get(0).toString();
 		String element1 = listA.get(1).toString();
 		String element2 = listA.get(2).toString();
 		String element3 = listA.get(3).toString();
 		System.out.println(element0+","+element1+","+element2+","+element3);
 		
-		//¸®½ºÆ®ÀÇ ±æÀÌ
+		//ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		int a = listA.size();
 		System.out.println(a);
 		 
-		//Iterator ÅëÇÑ ÀüÃ¼ Á¶È¸
+		//Iterator ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½È¸
 		Iterator iterator = listA.iterator();
 		while (iterator.hasNext()) {
 		    String element = (String) iterator.next();
 		    System.out.print(element+" ");
 		}
 		System.out.println();
-		//Iterator : boolean hasNext() : ´ÙÀ½ ¹Ýº¹¿¡¼­ »ç¿ëµÉ ¿ä¼Ò°¡ ÀÖÀ»‹š true¹ÝÈ¯
-		//           E next() : ´ÙÀ½ ¿ä¼Ò ¹ÝÈ¯
-		//           void remove() : ¸¶Áö¸·À¸·Î ¹ÝÈºµÈ ¿ä¼Ò Á¦°Å
+		//Iterator : boolean hasNext() : ï¿½ï¿½ï¿½ï¿½ ï¿½Ýºï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ò°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ trueï¿½ï¿½È¯
+		//           E next() : ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
+		//           void remove() : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Èºï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		
-		//for-loop ÅëÇÑ ÀüÃ¼ Á¶È¸ 
+		//for-loop ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½È¸ 
 		for(Object object : listA) {
 		    String element = (String) object;
 		    System.out.print(element+" ");
@@ -58,15 +58,15 @@ public class UsingList {
 		System.out.println();
 		
 		System.out.println(listA.contains("candy"));
-		//¿ä¼Ò Á¸Àç È®ÀÎ Boolean°ª ¹ÝÈ¯
+		//ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ Booleanï¿½ï¿½ ï¿½ï¿½È¯
 		
 		System.out.println(listA.remove(0));
 		System.out.println(listA.remove("apple"));
-		//0¹øÂ° ¿ä¼Ò Á¦°Å ¹× Á¦°ÅÇÏ´Â °ª Ãâ·Â
-		//"apple"¿ä¼Ò Á¦°Å ¹× Boolean °ª true¹ÝÈ¯
+		//0ï¿½ï¿½Â° ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½
+		//"apple"ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Boolean ï¿½ï¿½ trueï¿½ï¿½È¯
 		
 		listA.clear();
-		//listÀÇ ¸ðµç ¿ä¼Ò Á¦°Å
+		//listï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		
 	}*/
 
